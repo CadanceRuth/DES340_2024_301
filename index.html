@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <title>Project Zero</title>
+      <meta name="description" content="My first webpage">
+      <meta charset="utf-8">
+      <link rel="icon" href="icon.svg" type="image/svg+xml">
+    </head>
+    <body>
+      <h1>One Pager Design</h1>
+      <h2>Subtitle</h2>
+      <p>Binaries are built from a number of different branches and PRs but you should stick to the master branch releases for the most stable ones unless you know exactly what you are looking for.</p>
+
+      <h2>We currently build on both GitHub Actions and Cirrus CI:</h2>
+
+      <p>GitHub Actions is used for building the majority of our binaries and builds are run on every commit or PR.
+Direct artifact download is available only for those with at least read permission on the repository. All artifacts are therefore automatically uploaded to the pulsar-edit/pulsar-rolling-releases repository for access by anyone.
+Cirrus CI is only used for building Apple silicon (macOS M1/M2) and ARM Linux binaries. These are run less frequently (every Monday, Wednesday, and Friday).
+      To download a binary produced by GitHub Actions then follow the below steps: <a href="https://www.kickstarter.com/projects/klos/carbon-fiber-concert-ukuleles">Click here</a></p>
+
+      <p>Navigate to the pulsar-edit/pulsar-rolling-releases releases.
+      Select the most recent release (or for a specific release reference the timestamp part of the version e.g. 1.109.2023091606).
+      Most binaries will be available with every release but Apple silicon and ARM Linux binaries will not. You may need to look for earlier releases.
+      Choose the binary you wish to download from the Assets section (you may need click the Show all x assets link to display them all). See below for descriptions of all available binaries.
+      To download a binary from Cirrus CI (Apple silicon and ARM Linux only) please follow the below steps:</p>
+
+      <p>Go to the master branch Pulsar Cirrus CI page.
+      Select the latest successful build (check for a finished green check mark ✅ on the right side of the page - make sure you do not select a failed one).
+      Select your system from the list of options:
+      arm-linux - ARM based Linux systems (Raspberry Pi etc.)
+      silicon_mac - M1 and M2 chip Apple Macs
+      Select binary > binaries from the Artifacts pane
+      Download the binary you require for your system
+    </body>
